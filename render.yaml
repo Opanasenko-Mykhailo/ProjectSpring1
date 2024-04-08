@@ -1,0 +1,17 @@
+services:
+  - name: db
+    env: production
+    plan: starter
+    image: mysql:latest
+    ports:
+      - 3306
+
+  - name: app
+    env: production
+    plan: starter
+    buildCommand: docker-compose build app
+    startCommand: docker-compose up -d app
+    readyCommand: docker-compose exec app sh -c 'until nc -z localhost 8080; do sleep 1; done'
+    stopCommand: docker-compose down
+    github:
+      branch: main
