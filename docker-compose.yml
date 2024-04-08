@@ -23,3 +23,4 @@ services:
       MYSQL_DATABASE: springDB
     volumes:
       - ./src/main/resources/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+    command: [ "mysqld", "--default-authentication-plugin=mysql_native_password" ]
