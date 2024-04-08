@@ -5,12 +5,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        JAR_FILE: target/Spring1-0.0.1-SNAPSHOT.jar
     ports:
       - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/springDB
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
     depends_on:
       - db
+
   db:
     image: mysql:latest
     ports:
@@ -20,4 +23,3 @@ services:
       MYSQL_DATABASE: springDB
     volumes:
       - ./src/main/resources/setup.sql:/docker-entrypoint-initdb.d/setup.sql
-    command: ["mysqld", "--default-authentication-plugin=mysql_native_password"]
