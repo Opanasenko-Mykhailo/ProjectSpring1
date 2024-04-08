@@ -88,7 +88,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <configuration>
-                        <mainClass>org.jr.AppStart.java</mainClass>
+                        <mainClass>org.jr.AppStart</mainClass>
                     </configuration>
                 </plugin>
             <plugin>
