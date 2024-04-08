@@ -1,7 +1,7 @@
-package org.example.mapper;
+package org.jr.mapper;
 
-import org.example.dto.TaskDTO;
-import org.example.model.Task;
+import org.jr.dto.TaskDTO;
+import org.jr.model.Task;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

@@ -1,11 +1,12 @@
-package org.example.model;
+package org.jr.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.model.enums.Status;
-import jakarta.persistence.*;
+import org.jr.model.enums.Status;
+
+import javax.persistence.*;
 
 
 @Data

@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #da000f;
+}
+
+.delete-btn:hover {
+    background-color: #c40000;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.task-form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.task-form-container h2 {
+    margin-top: 0;
+}
+
+.task-form-container input,
+.task-form-container select,
+.task-form-container button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-table-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.task-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-table-container th, .task-table-container td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+}
+
+.task-table-container th {
+    background-color: #f2f2f2;
+}
+
+.task-table-container tr:hover {
+    background-color: #f5f5f5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.task-search-container {
+    margin-bottom: 20px;
+}
+
+.task-search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.task-search-container label,
+.task-search-container input,
+.task-search-container button {
+    margin-right: 10px;
+}
+.task-details-container {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.task-details-header {
+    margin-top: 0;
+}
+
+.task-details p {
+    margin: 5px 0;
+}
+
+.details-label {
+    font-weight: bold;
+    margin-right: 5px;
+}

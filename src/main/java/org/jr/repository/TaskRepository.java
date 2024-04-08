@@ -1,6 +1,6 @@
-package org.example.repository;
+package org.jr.repository;
 
-import org.example.model.Task;
+import org.jr.model.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
