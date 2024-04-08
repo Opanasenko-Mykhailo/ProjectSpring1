@@ -1,6 +1,10 @@
 
 FROM openjdk:22-ea-21-slim-bullseye AS builder
 
+RUN apt-get update && apt-get install -y \
+    && apt-get install -y git \
+    && apt-get clean
+
 WORKDIR /app
 COPY . .
 
