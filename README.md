@@ -5,11 +5,11 @@ To run this application, you will need Docker and Docker Compose installed on yo
 1. Clone this repository to your computer:
 
    ```bash
-   git clone https://github.com/Opanasenko-Mykhailo/ProjectSpring1.git
+   git clone https://github.com/Opanasenko-Mykhailo/project-spring-1.git
 2. Navigate to the project directory:
 
 ```bash
-cd ProjectSpring1
+cd project-spring-1
 ```
 3. Start the application using Docker Compose:
 
